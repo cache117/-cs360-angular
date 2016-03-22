@@ -2,6 +2,7 @@ var mongoose = require('mongoose');
 var CommentSchema = new mongoose.Schema({
   title: String,
   upvotes: {type: Number, default: 0},
+  avatar: String,
 });
 mongoose.model('Comment', CommentSchema);
 
